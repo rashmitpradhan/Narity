@@ -1,0 +1,6 @@
+{
+  "name": "Lumina Reader",
+  "description": "A minimalist ebook reader that supports EPUB and PDF formats, featuring AI-powered summaries and explanations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

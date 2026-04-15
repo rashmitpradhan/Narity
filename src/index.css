@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@theme inline {
+  --font-serif: "Georgia", serif;
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  
+  --color-background: #FDFCFB;
+  --color-foreground: #1A1A1A;
+  --color-accent: #9A8478;
+  --color-border: rgba(26, 26, 26, 0.1);
+  
+  --color-primary: #1A1A1A;
+  --color-primary-foreground: #FDFCFB;
+  
+  --color-muted: #F5F2F0;
+  --color-muted-foreground: #666666;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, .serif {
+    @apply font-serif;
+  }
+}
+
+/* Editorial Specific Utilities */
+.section-label {
+  @apply text-[10px] uppercase tracking-[0.2em] font-semibold text-accent mb-6;
+}
+
+.manuscript-text {
+  @apply font-serif text-[19px] leading-[1.7] text-justify;
+}
+
+.drop-cap::first-letter {
+  @apply float-left text-[72px] leading-[60px] pt-1 pr-3 font-serif;
+}
